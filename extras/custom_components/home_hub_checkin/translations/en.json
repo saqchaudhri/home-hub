@@ -1,0 +1,25 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Home Hub check-in",
+        "description": "When this Home Assistant comes online (for example the first time it's plugged in at a new house), it sends a message to the check-in address so the person looking after it knows. It keeps trying until the message gets through.",
+        "data": {
+          "house": "Name of this house",
+          "url": "Check-in address",
+          "remote": "Remote address (optional)"
+        },
+        "data_description": {
+          "url": "The webhook address on your own Home Assistant, for example https://example.duckdns.org:8123/api/webhook/…",
+          "remote": "How you reach this Home Assistant over Tailscale, for example http://home-hub-yusuf:8123. It's included in the message."
+        }
+      }
+    },
+    "error": {
+      "bad_url": "Enter a full address starting with http:// or https://"
+    },
+    "abort": {
+      "single_instance_allowed": "Check-in is already set up."
+    }
+  }
+}

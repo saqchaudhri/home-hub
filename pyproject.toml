@@ -1,0 +1,5 @@
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+# extras/ holds Home Hub check-in, kept out of custom_components/ because HACS allows one integration per repository
+pythonpath = [".", "extras"]

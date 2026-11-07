@@ -1,0 +1,18 @@
+{
+  "domain": "home_hub_checkin",
+  "name": "Home Hub check-in",
+  "codeowners": [
+    "@saqchaudhri"
+  ],
+  "config_flow": true,
+  "dependencies": [
+    "network"
+  ],
+  "documentation": "https://github.com/saqchaudhri/home-hub",
+  "integration_type": "service",
+  "iot_class": "cloud_push",
+  "issue_tracker": "https://github.com/saqchaudhri/home-hub/issues",
+  "requirements": [],
+  "single_config_entry": true,
+  "version": "0.1.0"
+}

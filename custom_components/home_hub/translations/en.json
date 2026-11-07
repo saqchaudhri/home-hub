@@ -1,0 +1,268 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Welcome to Home Hub",
+        "description": "This wizard builds a wall-tablet dashboard and a phone dashboard from your own devices. You can run it again at any time from Settings → Devices & services → Home Hub → Configure.\n\n{missing}\n\n{found}",
+        "data": {
+          "house_name": "House name",
+          "owner_name": "Your first name"
+        },
+        "data_description": {
+          "house_name": "Shown as the title of this setup.",
+          "owner_name": "Used on the screensaver's ON AIR sign, for example \"Sam is on a work call\". Leave blank to say \"Someone\"."
+        }
+      },
+      "people": {
+        "title": "Who lives here?",
+        "description": "Pick the people in the house. Their pictures appear at the top of the dashboards, and calendar entries that mention their name get their own colour.\n\n{found}",
+        "data": {
+          "people": "People"
+        }
+      },
+      "lights": {
+        "title": "Lights",
+        "description": "Pick the lights and smart sockets to show as on/off buttons. Tap a button to switch it; press and hold for more settings.\n\n{found}",
+        "data": {
+          "lights": "Lights and sockets"
+        }
+      },
+      "heating": {
+        "title": "Heating",
+        "description": "Pick your thermostats and heaters. Leave empty to hide the heating section.\n\n{found}",
+        "data": {
+          "climates": "Thermostats and heaters"
+        }
+      },
+      "cameras": {
+        "title": "Cameras",
+        "description": "Pick the cameras to show. Both are optional.\n\n{found}",
+        "data": {
+          "driveway_camera": "Driveway or outdoor camera (shown live)",
+          "doorbell_camera": "Doorbell camera",
+          "battery_sensors": "Battery levels to show (for example battery cameras)"
+        }
+      },
+      "info": {
+        "title": "Weather, calendar and prayer times",
+        "description": "{prayer_status}\n\n{found}",
+        "data": {
+          "weather": "Weather",
+          "calendar": "Family calendar",
+          "bin_calendar": "Bin collection calendar (optional)",
+          "prayer_times": "Show prayer times"
+        }
+      },
+      "media": {
+        "title": "Music and TV",
+        "description": "Pick the main speaker, and any other speakers or TVs to control from the phone.\n\n{found}",
+        "data": {
+          "speaker": "Main speaker",
+          "white_noise": "Add a white noise button for the main speaker",
+          "extra_media": "Other speakers and TVs (phone only)"
+        }
+      },
+      "doorbell": {
+        "title": "Doorbell",
+        "description": "When the doorbell rings, Home Hub can show the camera full screen on the wall tablet, even over the screensaver. Leave the doorbell empty to turn this off.\n\n{tablets}\n\n{found}",
+        "data": {
+          "doorbell_sensor": "Doorbell (the sensor that turns on when it rings)",
+          "doorbell_tablet": "Wall tablet",
+          "doorbell_seconds": "How long to show the camera"
+        },
+        "data_description": {
+          "doorbell_sensor": "Shows the driveway camera live, or the doorbell camera if there's no driveway camera."
+        }
+      },
+      "azan": {
+        "title": "Azan",
+        "description": "Home Hub can play the azan on the main speaker at prayer times and send a notification to phones with a Mute button. The dashboards get a Stop azan button.\n\n{phones}\n\n{found}",
+        "data": {
+          "azan": "Play the azan",
+          "azan_prayers": "Prayers",
+          "azan_sound": "Azan recording (web address of an MP3)",
+          "azan_phones": "Phones to notify"
+        }
+      },
+      "schedules": {
+        "title": "Night mode and outdoor lights",
+        "description": "Night mode turns the wall tablet's screensaver into a dim clock on a black screen overnight. Outdoor lights come on at sunset and go off at sunrise.\n\n{found}",
+        "data": {
+          "night_mode": "Night mode on the wall tablet",
+          "night_start": "Night starts",
+          "night_end": "Night ends",
+          "outdoor_lights": "Outdoor lights and sockets"
+        },
+        "data_description": {
+          "outdoor_lights": "They're also put right after a restart or a power cut."
+        }
+      },
+      "dashboards": {
+        "title": "Dashboards",
+        "description": "Choose which dashboards to create. They appear in the sidebar as \"Wall tablet\" and \"Phone\". Running this wizard again rebuilds them, replacing any changes made to them by hand.\n\n{found}",
+        "data": {
+          "wall_dashboard": "Wall tablet dashboard (landscape, with photo screensaver)",
+          "phone_dashboard": "Phone dashboard",
+          "screensaver_photos": "Show photos from My media on the screensaver",
+          "office_door": "Office door sensor for the ON AIR sign (optional)"
+        },
+        "data_description": {
+          "office_door": "When this door is shut, the wall tablet's screensaver shows an ON AIR sign."
+        }
+      }
+    },
+    "error": {
+      "no_dashboard": "Choose at least one dashboard.",
+      "no_prayer_sensors": "No prayer time sensors were found. Add the Islamic Prayer Times integration first, or turn this off.",
+      "need_tablet": "Choose the wall tablet to show the camera on.",
+      "need_camera": "Choose a driveway or doorbell camera on the Cameras page first.",
+      "need_prayer": "Choose at least one prayer.",
+      "need_speaker_or_phone": "Choose a main speaker on the Music page, or at least one phone."
+    },
+    "abort": {
+      "single_instance_allowed": "Home Hub is already set up. To change it, open Home Hub and choose Configure."
+    }
+  },
+  "options": {
+    "step": {
+      "user": {
+        "title": "Welcome to Home Hub",
+        "description": "This wizard builds a wall-tablet dashboard and a phone dashboard from your own devices. You can run it again at any time from Settings → Devices & services → Home Hub → Configure.\n\n{missing}\n\n{found}",
+        "data": {
+          "house_name": "House name",
+          "owner_name": "Your first name"
+        },
+        "data_description": {
+          "house_name": "Shown as the title of this setup.",
+          "owner_name": "Used on the screensaver's ON AIR sign, for example \"Sam is on a work call\". Leave blank to say \"Someone\"."
+        }
+      },
+      "people": {
+        "title": "Who lives here?",
+        "description": "Pick the people in the house. Their pictures appear at the top of the dashboards, and calendar entries that mention their name get their own colour.\n\n{found}",
+        "data": {
+          "people": "People"
+        }
+      },
+      "lights": {
+        "title": "Lights",
+        "description": "Pick the lights and smart sockets to show as on/off buttons. Tap a button to switch it; press and hold for more settings.\n\n{found}",
+        "data": {
+          "lights": "Lights and sockets"
+        }
+      },
+      "heating": {
+        "title": "Heating",
+        "description": "Pick your thermostats and heaters. Leave empty to hide the heating section.\n\n{found}",
+        "data": {
+          "climates": "Thermostats and heaters"
+        }
+      },
+      "cameras": {
+        "title": "Cameras",
+        "description": "Pick the cameras to show. Both are optional.\n\n{found}",
+        "data": {
+          "driveway_camera": "Driveway or outdoor camera (shown live)",
+          "doorbell_camera": "Doorbell camera",
+          "battery_sensors": "Battery levels to show (for example battery cameras)"
+        }
+      },
+      "info": {
+        "title": "Weather, calendar and prayer times",
+        "description": "{prayer_status}\n\n{found}",
+        "data": {
+          "weather": "Weather",
+          "calendar": "Family calendar",
+          "bin_calendar": "Bin collection calendar (optional)",
+          "prayer_times": "Show prayer times"
+        }
+      },
+      "media": {
+        "title": "Music and TV",
+        "description": "Pick the main speaker, and any other speakers or TVs to control from the phone.\n\n{found}",
+        "data": {
+          "speaker": "Main speaker",
+          "white_noise": "Add a white noise button for the main speaker",
+          "extra_media": "Other speakers and TVs (phone only)"
+        }
+      },
+      "doorbell": {
+        "title": "Doorbell",
+        "description": "When the doorbell rings, Home Hub can show the camera full screen on the wall tablet, even over the screensaver. Leave the doorbell empty to turn this off.\n\n{tablets}\n\n{found}",
+        "data": {
+          "doorbell_sensor": "Doorbell (the sensor that turns on when it rings)",
+          "doorbell_tablet": "Wall tablet",
+          "doorbell_seconds": "How long to show the camera"
+        },
+        "data_description": {
+          "doorbell_sensor": "Shows the driveway camera live, or the doorbell camera if there's no driveway camera."
+        }
+      },
+      "azan": {
+        "title": "Azan",
+        "description": "Home Hub can play the azan on the main speaker at prayer times and send a notification to phones with a Mute button. The dashboards get a Stop azan button.\n\n{phones}\n\n{found}",
+        "data": {
+          "azan": "Play the azan",
+          "azan_prayers": "Prayers",
+          "azan_sound": "Azan recording (web address of an MP3)",
+          "azan_phones": "Phones to notify"
+        }
+      },
+      "schedules": {
+        "title": "Night mode and outdoor lights",
+        "description": "Night mode turns the wall tablet's screensaver into a dim clock on a black screen overnight. Outdoor lights come on at sunset and go off at sunrise.\n\n{found}",
+        "data": {
+          "night_mode": "Night mode on the wall tablet",
+          "night_start": "Night starts",
+          "night_end": "Night ends",
+          "outdoor_lights": "Outdoor lights and sockets"
+        },
+        "data_description": {
+          "outdoor_lights": "They're also put right after a restart or a power cut."
+        }
+      },
+      "dashboards": {
+        "title": "Dashboards",
+        "description": "Choose which dashboards to create. They appear in the sidebar as \"Wall tablet\" and \"Phone\". Running this wizard again rebuilds them, replacing any changes made to them by hand.\n\n{found}",
+        "data": {
+          "wall_dashboard": "Wall tablet dashboard (landscape, with photo screensaver)",
+          "phone_dashboard": "Phone dashboard",
+          "screensaver_photos": "Show photos from My media on the screensaver",
+          "office_door": "Office door sensor for the ON AIR sign (optional)"
+        },
+        "data_description": {
+          "office_door": "When this door is shut, the wall tablet's screensaver shows an ON AIR sign."
+        }
+      }
+    },
+    "error": {
+      "no_dashboard": "Choose at least one dashboard.",
+      "no_prayer_sensors": "No prayer time sensors were found. Add the Islamic Prayer Times integration first, or turn this off.",
+      "need_tablet": "Choose the wall tablet to show the camera on.",
+      "need_camera": "Choose a driveway or doorbell camera on the Cameras page first.",
+      "need_prayer": "Choose at least one prayer.",
+      "need_speaker_or_phone": "Choose a main speaker on the Music page, or at least one phone."
+    }
+  },
+  "entity": {
+    "binary_sensor": {
+      "azan_playing": {
+        "name": "Azan playing"
+      }
+    },
+    "button": {
+      "stop_azan": {
+        "name": "Stop azan"
+      }
+    },
+    "select": {
+      "tablet_mode": {
+        "name": "Wall tablet mode",
+        "state": {
+          "day": "Day",
+          "night": "Night"
+        }
+      }
+    }
+  }
+}

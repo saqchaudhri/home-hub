@@ -1,0 +1,10 @@
+# Test house for Home Hub
+default_config:
+
+# Pretend lights, heating, cameras, weather, calendars, speakers and sensors to pick from in the wizard
+demo:
+
+logger:
+  default: warning
+  logs:
+    custom_components.home_hub: debug

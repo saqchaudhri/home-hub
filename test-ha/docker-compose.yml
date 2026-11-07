@@ -1,0 +1,17 @@
+# A throwaway Home Assistant for testing Home Hub. Nothing here touches the real house.
+# Start:  docker compose -f test-ha/docker-compose.yml up -d   ->  http://localhost:8124
+# Wipe:   docker compose -f test-ha/docker-compose.yml down && rm -rf test-ha/config/.storage
+services:
+  homeassistant:
+    container_name: home-hub-test
+    image: ghcr.io/home-assistant/home-assistant:2026.6.0
+    restart: unless-stopped
+    ports:
+      - "8124:8123"
+    environment:
+      - TZ=Europe/London
+    volumes:
+      - ./config:/config
+      # The integration is mounted straight from this project, so code changes only need a restart
+      - ../custom_components/home_hub:/config/custom_components/home_hub:ro
+      - ../extras/custom_components/home_hub_checkin:/config/custom_components/home_hub_checkin:ro

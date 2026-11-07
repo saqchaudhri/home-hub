@@ -1,0 +1,9 @@
+# A brand-new Home Assistant for checking the starter backup restores cleanly.
+services:
+  homeassistant:
+    container_name: home-hub-restore-test
+    image: ghcr.io/home-assistant/home-assistant:2026.6.0
+    ports: ["8126:8123"]
+    environment: [TZ=Europe/London]
+    volumes:
+      - ./config:/config

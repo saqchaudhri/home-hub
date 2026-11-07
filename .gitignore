@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+# Personal exports of the original house's dashboards: never publish these
+reference/
+# Test Home Assistant's data (users, databases, downloaded cards)
+test-ha/config/*
+!test-ha/config/configuration.yaml
+# Starter backup: downloads, the built file and the restore test's data
+starter/downloads/
+starter/dist/
+starter/restore-test/config/
+# Your private check-in address
+starter/checkin-address.txt
